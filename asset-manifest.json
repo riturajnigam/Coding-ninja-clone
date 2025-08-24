@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Coding-ninja-clone/static/css/main.3253888e.css",
-    "main.js": "/Coding-ninja-clone/static/js/main.d97e937e.js",
+    "main.css": "/Coding-ninja-clone/static/css/main.a5aa5c8f.css",
+    "main.js": "/Coding-ninja-clone/static/js/main.a5fd4394.js",
     "index.html": "/Coding-ninja-clone/index.html",
-    "main.3253888e.css.map": "/Coding-ninja-clone/static/css/main.3253888e.css.map",
-    "main.d97e937e.js.map": "/Coding-ninja-clone/static/js/main.d97e937e.js.map"
+    "main.a5aa5c8f.css.map": "/Coding-ninja-clone/static/css/main.a5aa5c8f.css.map",
+    "main.a5fd4394.js.map": "/Coding-ninja-clone/static/js/main.a5fd4394.js.map"
   },
   "entrypoints": [
-    "static/css/main.3253888e.css",
-    "static/js/main.d97e937e.js"
+    "static/css/main.a5aa5c8f.css",
+    "static/js/main.a5fd4394.js"
   ]
 }
