@@ -13,16 +13,20 @@ const Home = () => {
     { number: "50,000+", label: "Students Enrolled" },
     { number: "200+", label: "Expert Instructors" },
     { number: "95%", label: "Placement Rate" },
-    { number: "24/7", label: "Doubt Support" }
+    { number: "24/7", label: "Doubt Support" },
+    { number: "500+", label: "Companies" },
+    { number: "₹15LPA", label: "Avg Package" }
   ];
 
   const features = [
     "Live Interactive Classes",
-    "Industry Expert Instructors",
+    "Industry Expert Instructors", 
     "Doubt Support 24/7",
     "Certificate of Completion",
     "Placement Assistance",
-    "Lifetime Access to Content"
+    "Lifetime Access to Content",
+    "Project-Based Learning",
+    "Mock Interviews"
   ];
 
   // Simple icon components
@@ -48,11 +52,11 @@ const Home = () => {
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 Master Coding Skills with{' '}
-                <span className="text-yellow-400">Industry Experts</span>
+                <span className="text-yellow-400">Coding Ninjas</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
                 Join 50,000+ students who have transformed their careers with our 
-                comprehensive coding courses and placement assistance.
+                comprehensive coding courses and placement assistance. Learn from industry experts!
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -69,13 +73,13 @@ const Home = () => {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                 {stats.map((stat, index) => (
                   <div key={index} className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold text-yellow-400">
+                    <div className="text-xl md:text-2xl lg:text-3xl font-bold text-yellow-400">
                       {stat.number}
                     </div>
-                    <div className="text-sm text-gray-200">{stat.label}</div>
+                    <div className="text-xs md:text-sm text-gray-200">{stat.label}</div>
                   </div>
                 ))}
               </div>
@@ -113,19 +117,19 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                  <CheckCircleIcon />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature}</h3>
-                <p className="text-gray-600">
-                  Get the best learning experience with our comprehensive features designed for your success.
-                </p>
-              </div>
-            ))}
-          </div>
+                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+             {features.map((feature, index) => (
+               <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                 <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                   <CheckCircleIcon />
+                 </div>
+                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature}</h3>
+                 <p className="text-gray-600 text-sm">
+                   Get the best learning experience with our comprehensive features designed for your success.
+                 </p>
+               </div>
+             ))}
+           </div>
         </div>
       </section>
 
@@ -178,15 +182,16 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding bg-primary-600 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Start Your Coding Journey?
-          </h2>
-          <p className="text-xl text-primary-100 mb-8">
-            Join thousands of students who have already transformed their careers with our courses.
-          </p>
+             {/* CTA Section */}
+       <section className="section-padding bg-primary-600 text-white">
+         <div className="max-w-4xl mx-auto text-center">
+           <h2 className="text-3xl md:text-4xl font-bold mb-6">
+             Ready to Start Your Coding Journey?
+           </h2>
+           <p className="text-xl text-primary-100 mb-8">
+             Join thousands of students who have already transformed their careers with our courses. 
+             Get placement assistance and lifetime access to content!
+           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/signup"
